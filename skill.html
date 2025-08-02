@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+        margin:0;
+        padding:0;
+    }
+    a{
+        text-decoration: none;
+        color:white;
+    }
+        .menu_tab{
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+        height:10%;
+        width:100%;
+        background-color: rgb(53, 55, 61);
+        position:fixed;
+        color:white;
+         position: fixed;
+        z-index: 1000;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        
+    }
+    .logo_section{
+        padding:20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .title{
+        font-size: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo{
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 35px;
+        width:30px;
+        border-radius: 30px;
+    }
+    .options{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+    }
+    .home{
+        margin:15px;
+        font-size: 24px;
+    }
+    .skills{
+         margin:15px;
+        font-size: 24px;
+    }
+    .education{
+        margin:15px;
+         font-size: 24px;
+    }
+    .projects{
+        margin:15px;
+         font-size: 24px;
+    }
+    .hobbies{
+        margin:15px;
+         font-size: 24px;
+
+    }
+    .contact{
+        margin:15px;
+         font-size: 24px;
+    }
+
+
+         .my_skills_container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width:100%;
+        background-color: rgb(220, 209, 209);
+        flex-direction: column;
+        
+    }
+    .my_skill_title_container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .my_skills_title{
+        font-size: 40px;
+        margin: 50px;
+    }
+    .skill_boxes_container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding:30px;
+        height:100%;
+        width:100%;
+    }
+    .skill_boxes{
+        display:grid;
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows:auto auto;
+        gap:90px;
+        margin:50px;
+    }
+    .html{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 95px;
+        width:150px;
+        
+    }
+    .css{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        width:100px;
+        
+    }
+    .js{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        width:100px;
+        
+    }
+    .tailwindcss{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        width:100px;
+        
+    }
+    .sql{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        width:100px;
+        
+    }
+    .java{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        width:100px;
+        
+    }
+    .cpp{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        width:100px;
+        
+    }
+    .python{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        width:100px;
+        
+    }
+    </style>
+ </head>
+ <body>
+    <nav class="menu_tab">
+            <div class="logo_section">
+                <img src="myimg.jpg" class="logo">
+                <div class="title"> RuchikaSharma</div>
+            </div>
+
+            <nav class="options">
+               <a href="index.html" class="home">Home</a>
+               <a href="skill.html" class="skills">Skills</a>
+               <a href="edu.html" class="education">Education</a>
+               <a href="projects" class="projects">Projects</a>
+               <a href="hobby.html" class="hobbies">Hobbies</a>
+               <a href="contact.html" class="contact">Contact</a>
+               
+               
+            </nav>
+        </nav>
+
+
+    <div class="my_skills_container">
+                <div class="skill_title_container">
+                   <h1 class="my_skills_title">My Skills</h1>
+                </div>
+                <div class="skill_box_container">
+                    <div class="skill_boxes">
+                        <img src="htmllogo.png" class="html">
+                        <img src="csslogo.png" class="css">
+                        <img src="jslogo.jpg"class="js">
+                        <img src="tailwind.jpg" class="tailwindcss">
+                        <img src="mysql.png" class="sql">
+                        <img src="javalogo.jpg"class="java">
+                        <img src="cpp.png" class="cpp">
+                        <img src="python-logo.png"class="python">
+                    </div>
+                </div>
+        </div>
+ </body>
+ </html>
