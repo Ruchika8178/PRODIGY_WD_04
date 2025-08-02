@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruchika Sharma</title>
+<style>
+    *{
+        margin:0;
+        padding:0;
+    }
+    a{
+        text-decoration: none;
+        color:white;
+    }
+    .full_container{
+        height: 100%;
+        width:100%;
+    }
+    .menu_tab{
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+        height:10%;
+        width:100%;
+        background-color: rgb(53, 55, 61);
+        position:fixed;
+        color:white;
+         position: fixed;
+        z-index: 1000;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        
+    }
+    .logo_section{
+        padding:20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .title{
+        font-size: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo{
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 35px;
+        width:30px;
+        border-radius: 30px;
+    }
+    .options{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+    }
+    .home{
+        margin:15px;
+        font-size: 24px;
+    }
+    .home:hover{
+        font-weight:bold;
+    }
+    .skills{
+         margin:15px;
+        font-size: 24px;
+    }
+    .skills:hover{
+        font-weight:bold;
+    }
+    .education{
+        margin:15px;
+         font-size: 24px;
+    }
+    .education:hover{
+        font-weight:bold;
+    }
+    .projects{
+        margin:15px;
+         font-size: 24px;
+    }
+    .projects:hover{
+        font-weight:bold;
+    }
+    .hobbies{
+        margin:15px;
+        font-size: 24px;
+
+    }
+    .hobbies:hover{
+        font-weight:bold;
+    }
+    .contact{
+        margin:15px;
+         font-size: 24px;
+    }
+    .contact:hover{
+        font-weight:bold;
+    }
+    
+    .top_container{
+        height:100vh;
+        width: 100%;
+        display:flex;
+        justify-content:space-around;
+        align-items: center;
+        flex-direction: row;
+        background-image:url(pink-aesthetic-wallpaper.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        
+        padding-bottom: 50px;
+        padding-top: 20px; /* or adjust according to your nav height */
+    }
+    .left_top{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top:150px;
+        margin-left: 150px;
+        
+    }
+    .my_salute{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        font-size:28px;
+        padding:20px;
+    }
+    .my_name{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        
+    }
+    .I{
+        font-size: 32px;
+        padding:10px;
+    }
+    .typewriter {
+  overflow: hidden;
+  border-right: 2px solid black;
+  white-space: nowrap;
+  width: 0;
+  animation: typing 5s steps(14) 1s infinite, blink 0.7s step-end infinite;
+  font-family: monospace;
+  font-size: 32px;
+}
+
+/* Typing effect */
+@keyframes typing {
+  0% { width: 0; }
+  50% { width: 14ch; } /* Fully typed */
+  100% { width: 0; }   /* Erased again */
+}
+
+/* Blinking cursor */
+@keyframes blink {
+  0%, 100% { border-color: transparent; }
+  50% { border-color: black; }
+}
+
+
+
+
+    .my_intro{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        font-size:28px;
+        margin:15px;
+        flex-wrap: wrap;
+    }
+    .resume{
+        color:rgb(247, 240, 240);
+        background-color: rgb(39, 40, 43);
+        font-size:22px;
+        border:solid grey;
+        border-radius:30px;
+        padding:10px;
+        margin:15px;
+    }
+    .right_top{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        margin-top:150px;
+        margin-right: 150px;
+        margin-bottom: 90px;
+        
+    }
+    .img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height:550px;
+        width:400px;
+        border-radius:550px;
+        opacity: 0.9;
+  transition: opacity 0.3s ease;   
+        z-index: 1;
+    position: relative;     
+    }
+    .img:hover{
+       opacity: 1;
+    }
+  
+
+
+                                          /* 2nd section*/
+
+    .about_container{
+        height:100%;
+        width:100%;
+        background-color: rgb(45, 47, 48);
+    }
+    .about_title_container{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        margin:0;
+        
+    }
+    .about_title{
+        color:white;
+        font-size: 45px;
+        margin:30px;
+        
+    }
+    .about_para_container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .about_para{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        color:aliceblue;
+        font-size: 27px;
+        margin:20px;
+        padding:80px;
+    }
+</style>
+</head>
+<body>
+    <div class="full_container">
+
+        <nav class="menu_tab">
+            <div class="logo_section">
+                <img src="myimg.jpg" class="logo">
+                <div class="title"> RuchikaSharma</div>
+            </div>
+
+            <nav class="options">
+               <a href="index.html" class="home">Home</a>
+               <a href="skill.html" class="skills">Skills</a>
+               <a href="edu.html" class="education">Education</a>
+               <a href="project.html" class="projects">Projects</a>
+               <a href="hobby.html" class="hobbies">Hobbies</a>
+               <a href="contact.html" class="contact">Contact</a>
+               
+               
+            </nav>
+        </nav>
+
+
+
+        <div class="top_container">
+            <div class="left_top">
+                <div class="my_salute">Hello There!</div>
+                <div class="my_name">
+                    <div class="I">I am </div> 
+                    <div class="typewriter">Ruchika Sharma</div>
+                </div>
+                <div class="my_intro">I am a  Web Developer by proffesion and an <br>enthusiast by nature
+                      I have a creative mind <br>which helps me to build awesome websites.
+                </div>
+                <a href="C:\Users\PRERNA SHARMA\OneDrive\Desktop\RUCHIKA SHARMA CV.docx" class="resume">Resume</a>
+            </div>
+            <div class="right_top">
+                <img src="myimg.jpg" class="img">
+            </div>
+        </div>
+
+        <div class="about_container">
+            <div class="about_title_container">
+                <h1 class="about_title">My Journey</h1>
+
+                <!--can add basic starting projects u made as templates -->
+
+
+            </div>
+            <hr>
+            <!-- isme ek moving train daal skte hai ya moving skills bhi end m -->
+             <div class="about_para_container">
+                 <p class="about_para">I am a 3rd-year BCA student at YMCA, Faridabad, with a strong passion 
+                    for Computer Science that began back in 11th grade — despite coming from a humanities
+                     background. That interest led me to pursue BCA, and ever since, 
+                    Ihave been actively working on developing my skills in areas like web development and programming.
+                    Right now, I am focused on improving and expanding my technical abilities, and I am actively
+                 looking for opportunities that can help me learn, grow, and gain real-world experience. I believe the right opportunity can be a stepping stone toward both personal and professional growth — and I’m ready to give it my best.</p>
+            </div>            
+        </div>        
+
+    </div>
+    
+</body>
+</html>
