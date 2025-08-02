@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         *{
+        margin:0;
+        padding:0;
+    }
+    a{
+        text-decoration: none;
+        color:white;
+    }
+    .full_container{
+        height: 100%;
+        width:100%;
+    }
+    .menu_tab{
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+        height:10%;
+        width:100%;
+        background-color: rgb(53, 55, 61);
+        position:fixed;
+        color:white;
+         position: fixed;
+        z-index: 1000;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        
+    }
+    .logo_section{
+        padding:20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .title{
+        font-size: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo{
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 35px;
+        width:30px;
+        border-radius: 30px;
+    }
+    .options{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+    }
+    .home{
+        margin:15px;
+        font-size: 24px;
+    }
+    .skills{
+         margin:15px;
+        font-size: 24px;
+    }
+    .education{
+        margin:15px;
+         font-size: 24px;
+    }
+    .projects{
+        margin:15px;
+         font-size: 24px;
+    }
+    .hobbies{
+        margin:15px;
+        font-size: 24px;
+
+    }
+    .contact{
+        margin:15px;
+         font-size: 24px;
+    }
+        /* Project Section Styling */
+.project-section {
+  padding: 60px 20px;
+  background: #6c6565;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.project-section h2 {
+  font-size: 2.8rem;
+  color: #222;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.project-section h2::after {
+  content: "";
+  width: 60px;
+  height: 4px;
+  background-color: #3b424b;
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 5px;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Project Card Styling */
+.project-card {
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+}
+
+.project-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-bottom: 1px solid #eee;
+}
+
+.project-info {
+  padding: 20px;
+  text-align: left;
+}
+
+.project-info h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.project-info p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.project-info a {
+  display: inline-block;
+  background-color: #3b424b;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.project-info a:hover {
+  background-color: #747a81;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .project-section h2 {
+    font-size: 2rem;
+  }
+
+  .project-info h3 {
+    font-size: 1.2rem;
+  }
+
+  .project-info p {
+    font-size: 0.9rem;
+  }
+}
+
+    </style>
+</head>
+<body>
+     <nav class="menu_tab">
+            <div class="logo_section">
+                <img src="myimg.jpg" class="logo">
+                <div class="title"> RuchikaSharma</div>
+            </div>
+
+            <nav class="options">
+               <a href="index.html" class="home">Home</a>
+               <a href="skill.html" class="skills">Skills</a>
+               <a href="edu.html" class="education">Education</a>
+               <a href="project.html" class="projects">Projects</a>
+               <a href="hobby.html" class="hobbies">Hobbies</a>
+               <a href="contact.html" class="contact">Contact</a>
+               
+               
+            </nav>
+        </nav>
+    <section id="projects" class="project-section">
+  <h2>My Projects</h2>
+  <div class="projects-container">
+
+    <!-- Stopwatch Project -->
+    <div class="project-card">
+      <img src="stopwatchimg.jpg" alt="Stopwatch Web App">
+      <div class="project-info">
+        <h3>Stopwatch Web App</h3>
+        <p>A simple and responsive stopwatch built using HTML, CSS, and JavaScript. It includes start, stop, and reset functionalities with a sleek UI.</p>
+        <a href=" https://github.com/Ruchika8178/PRODIGY_WD_02.git " target="_blank">View Project</a>
+      </div>
+    </div>
+
+    <!-- Tic Tac Toe Project -->
+    <div class="project-card">
+      <img src="tictacimg.webp" alt="Tic Tac Toe Web Game">
+      <div class="project-info">
+        <h3>Tic Tac Toe Web Game</h3>
+        <p>A fun two-player tic tac toe game created using HTML, CSS, and JavaScript. The game tracks turns and detects win or draw conditions.</p>
+        <a href="https://github.com/Ruchika8178/PRODIGY_WD_03.git" target="_blank">View Project</a>
+      </div>
+    </div>
+
+    <!-- Study Sync Project -->
+    <div class="project-card">
+      <img src="studysyncimg.png" alt="Study Sync Frontend">
+      <div class="project-info">
+        <h3>Study Sync – Frontend UI</h3>
+        <p>A modern and responsive frontend design for a collaborative student platform. Built using HTML and CSS with a strong focus on layout, visual hierarchy, and usability.</p>
+        <a href="https://github.com/Ruchika8178/PRODIGY_WD_01.git" target="_blank">View Project</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+</body>
+</html>
